@@ -14,30 +14,6 @@ const Footer = ({ title }) => {
     return currentYear
   })()
 
-  // return (
-  //   <footer className="relative z-10 dark:bg-black flex-shrink-0 bg-hexo-light-gray justify-center text-center m-auto w-full leading-6  text-gray-600 dark:text-gray-100 text-sm p-6">
-  //     {/* <DarkModeButton/> */}
-
-  //       <p className="text-xs pt-2 text-light-500 dark:text-gray-500">
-  //         Thank{' '}
-  //         <a
-  //           href="https://notion.so"
-  //           className="dark:text-gray-300"
-  //         >
-  //           Notion
-  //         </a> and{' '}
-  //         <a
-  //           href="https://github.com/tangly1024/NotionNext"
-  //           className="dark:text-gray-300"
-  //         >
-  //           NotionNext {BLOG.VERSION}
-  //         </a>
-  //         .
-  //       </p>
-  //     </span>
-  //     <br />
-  //   </footer>
-  // )
   return (
     <footer className="w-full border-t mt-10 flex sm:flex-row flex-col justify-between px-12 py-10 sm:mb-0 mb-3 text-sm text-secondary-500">
       <div className="">
