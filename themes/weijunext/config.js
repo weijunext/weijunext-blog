@@ -1,7 +1,13 @@
 const CONFIG = {
+  DESCRIPTION: '分享前端、全栈和AI知识',
   HOME_BANNER_ENABLE: process.env.NEXT_PUBLIC_HOME_BANNER_ENABLE || false,
   // 3.14.1以后的版本中，欢迎语在blog.config.js中配置，用英文逗号','隔开多个。
-  HOME_BANNER_GREETINGS: ['Hi，我是一个程序员', 'Hi，我是一个打工人', 'Hi，我是一个干饭人', '欢迎来到我的博客🎉'], // 首页大图标语文字
+  HOME_BANNER_GREETINGS: [
+    'Hi，我是一个程序员',
+    'Hi，我是一个打工人',
+    'Hi，我是一个干饭人',
+    '欢迎来到我的博客🎉'
+  ], // 首页大图标语文字
 
   HOME_NAV_BUTTONS: true, // 首页是否显示分类大图标按钮
   // 已知未修复bug, 在移动端开启true后会加载不出图片； 暂时建议设置为false。
@@ -22,7 +28,8 @@ const CONFIG = {
   POST_LIST_COVER_DEFAULT: true, // 封面为空时用站点背景做默认封面
   POST_LIST_SUMMARY: true, // 文章摘要
   POST_LIST_PREVIEW: false, // 读取文章预览
-  POST_LIST_IMG_CROSSOVER: process.env.NEXT_PUBLIC_POST_LIST_IMG_CROSSOVER || false, // 博客列表图片左右交错
+  POST_LIST_IMG_CROSSOVER:
+    process.env.NEXT_PUBLIC_POST_LIST_IMG_CROSSOVER || false, // 博客列表图片左右交错
 
   ARTICLE_ADJACENT: true, // 显示上一篇下一篇文章推荐
   ARTICLE_COPYRIGHT: true, // 显示文章版权声明
