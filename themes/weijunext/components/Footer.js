@@ -15,7 +15,7 @@ const Footer = ({ title }) => {
   })()
 
   return (
-    <footer className="w-full border-t mt-10 flex sm:flex-row flex-col justify-between px-12 py-10 sm:mb-0 mb-3 text-sm text-secondary-500">
+    <footer className="w-full border-t mt-10 flex sm:flex-row flex-col justify-between px-12 py-10 sm:mb-0 mb-3 text-sm bg-black text-gray-100">
       <div className="">
         <Link
           href="/"
