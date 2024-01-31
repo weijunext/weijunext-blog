@@ -19,21 +19,23 @@ const Footer = ({ title }) => {
           <ContactMe />
         </div>
         <div className="mb-2 flex space-x-2 flex-wrap justify-center">
-          <Link href="https://weijunext.com/" target="_blank">
-            J实验室
-          </Link>
-          <div>{' • '}</div>
-          <Link href="https://githubbio.com/" target="_blank">
-            Github Bio Generator
-          </Link>
-          <div>{' • '}</div>
-          <Link href="https://smartexcel.cc/" target="_blank">
-            Smart Excel（开源）
-          </Link>
-          <div>{' • '}</div>
-          <Link href="https://nextjs.weijunext.com/" target="_blank">
-            Next.js 实战分享
-          </Link>
+          {BLOG.FOOTER_PRODUCT.map((product, index) => {
+            return (
+              <>
+                <Link key={product.url} href={product.url} target="_blank">
+                  {product.name}
+                </Link>
+                {/* eslint-disable-next-line multiline-ternary */}
+                {index !== BLOG.FOOTER_PRODUCT.length - 1 ? (
+                  <>
+                    <div>{' • '}</div>
+                  </>
+                ) : (
+                  <></>
+                )}
+              </>
+            )
+          })}
         </div>
         <div className="mb-2 flex space-x-2">
           <Link href={BLOG.LINK}>{BLOG.AUTHOR}</Link>
