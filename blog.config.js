@@ -449,7 +449,11 @@ const BLOG = {
     { url: 'https://githubbio.com', name: 'Github Bio Generator' },
     { url: 'https://smartexcel.cc/', name: 'Smart Excel' },
     { url: 'https://starter.weijunext.com/', name: 'Next.js Starter' },
-    { url: 'https://nextjs.weijunext.com/', name: 'Next.js Practice' }
+    { url: 'https://nextjs.weijunext.com/', name: 'Next.js Practice' },
+    {
+      url: 'https://github.com/weijunext/indie-hacker-tools',
+      name: 'Indie Hacker Tools'
+    }
   ]
 }
 
