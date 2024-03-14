@@ -44,10 +44,10 @@ export default function PostHeader({ post, siteInfo }) {
           </div>
 
           {/* 文章Title */}
-          <div className="leading-snug font-bold xs:text-4xl sm:text-4xl md:text-5xl md:leading-snug text-4xl shadow-text-md flex justify-center text-center text-white">
+          <h1 className="leading-snug font-bold xs:text-4xl sm:text-4xl md:text-5xl md:leading-snug text-4xl shadow-text-md flex justify-center text-center text-white">
             <NotionIcon icon={post.pageIcon} className="text-4xl mx-1" />
             {post.title}
-          </div>
+          </h1>
 
           <section className="flex-wrap shadow-text-md flex text-sm justify-center mt-4 text-white dark:text-gray-400 font-light leading-8">
             <div className="flex justify-center dark:text-gray-200 text-opacity-70">
